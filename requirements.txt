@@ -1,9 +1,9 @@
 jupyter
 matplotlib
 pillow
-keras==1.2.2
-theano
-tensorflow
+keras==2.3.1
+tensorflow==1.15.0
+theano==1.0.4
 pandas
 scikit-learn
 sympy
