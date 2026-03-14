@@ -27,7 +27,7 @@ jobs:
           source baseline_env/bin/activate
           pip install --upgrade pip setuptools wheel
           pip install -r requirements.txt
-          python validation_fastai_courses.py
+          python validation_fastai.py
           deactivate
 
       - name: 💥 2. Run Pip Upgrade
@@ -37,7 +37,7 @@ jobs:
           source upgrade_env/bin/activate
           pip install --upgrade pip setuptools wheel
           pip install --upgrade -r primary_requirements.txt
-          python validation_fastai_courses.py
+          python validation_fastai.py
           deactivate
 
 
