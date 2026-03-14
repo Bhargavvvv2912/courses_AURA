@@ -2,8 +2,8 @@ jupyter
 matplotlib
 pillow
 keras==2.3.1
-tensorflow==1.15.0
 theano==1.0.4
+tensorflow
 pandas
 scikit-learn
 sympy
