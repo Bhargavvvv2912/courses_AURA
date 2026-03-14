@@ -6,5 +6,4 @@ theano
 tensorflow
 pandas
 scikit-learn
-bcolz
 sympy
