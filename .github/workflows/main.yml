@@ -25,9 +25,9 @@ jobs:
         run: |
           python -m venv baseline_env
           source baseline_env/bin/activate
-          pip install --upgrade pip
+          pip install --upgrade pip setuptools wheel
           pip install -r requirements.txt
-          python validation_fastai.py
+          python validation_fastai_courses.py
           deactivate
 
       - name: 💥 2. Run Pip Upgrade
@@ -35,10 +35,11 @@ jobs:
         run: |
           python -m venv upgrade_env
           source upgrade_env/bin/activate
-          pip install --upgrade pip
+          pip install --upgrade pip setuptools wheel
           pip install --upgrade -r primary_requirements.txt
-          python validation_fastai.py
+          python validation_fastai_courses.py
           deactivate
+
 
       - name: 🤖 Run AURA Agent
         run: |
